@@ -1,0 +1,29 @@
+.started {
+  padding: 76px 0;
+  background-color: $light-coral;
+  background-image: url(../images/started-bgi.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 685px) bottom;
+  background-size: 200px 122px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: #012f34;
+    font-size: 48px;
+    margin-left: 63px;
+  }
+
+  &__link {
+    margin-left: 260px;
+    color: $sacramento-state-green;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 32px;
+    border-radius: 24px;
+    border: 2px solid #012f34;
+  }
+}

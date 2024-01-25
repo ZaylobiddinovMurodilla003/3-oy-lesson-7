@@ -1,0 +1,48 @@
+.hero {
+  padding-top: 60px;
+  flex-shrink: 0;
+  padding-bottom: 255px;
+  background-image: url(../images/hero-bg-left.svg),
+    url(../images/hero-bg-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 200px, 350px 100px;
+  background-position: calc(50% - 720px) calc(50% - 110px),
+    calc(50% + 380px) bottom;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 100px;
+    width: 620px;
+    line-height: 100px;
+  }
+
+  &__secondary-color {
+    color: $light-coral;
+  }
+
+  &__text {
+    width: 445px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    position: relative;
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 50px;
+      height: 4px;
+      background-color: #79c8c7;
+      border: none;
+      position: absolute;
+      top: -80px;
+    }
+  }
+}

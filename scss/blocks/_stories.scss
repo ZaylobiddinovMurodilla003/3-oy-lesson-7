@@ -1,0 +1,73 @@
+.stories {
+  padding: 140px 0 151px;
+  background-image: url(../images/stories-bgi-1.svg),
+    url(../images/stories-bgi-2.svg);
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 100px;
+  background-position: calc(50% - 720px) top, calc(50% + 660px) bottom;
+
+  &__container {
+    width: 1400px;
+  }
+
+  &__title {
+    width: 932px;
+    color: $white;
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 56px;
+      background-image: url(../images/quote-top.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: -12px;
+      z-index: -1;
+    }
+
+    &__title {
+      color: #79c8c7;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__text {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+
+    &__info {
+      color: $white;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 25px;
+      order: -1;
+      margin-bottom: 24px;
+      width: 350px;
+    }
+  }
+}
